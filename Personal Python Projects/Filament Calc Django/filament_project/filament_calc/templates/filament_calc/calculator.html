@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filament Calculator</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'filament_calc/style.css' %}"
+    />
+  </head>
+  <body>
+    <h1>Filament Calculator</h1>
+    <p>
+      This calculator will help you determine the weight and length of filament
+      used for a 3D print.
+    </p>
+    <p>
+      If a material is not listed, please use the additional material weight and
+      length fields to calculate the weight and length of the alternative
+      material.
+    </p>
+    <form method="post">
+      {% csrf_token %}
+      <label for="length">Length of material used (meters):</label>
+      <input
+        type="text"
+        name="length"
+        id="length"
+        value="{{ length_input }}"
+      /><br /><br />
+
+      <label for="weight">Weight of material used (grams):</label>
+      <input
+        type="text"
+        name="weight"
+        id="weight"
+        value="{{ weight_input }}"
+      /><br /><br />
+
+      <label for="material">Material PLA , ABS, PETG, ASA, Nylon, TPU:</label>
+      <input
+        type="text"
+        name="material"
+        id="material"
+        value="{{ material }}"
+      /><br /><br />
+
+      <label for="material_weight"
+        >Additional Material Weight (grams per meter):</label
+      >
+      <input
+        type="text"
+        name="material_weight"
+        id="material_weight"
+      /><br /><br />
+
+      <input type="submit" value="Calculate" />
+    </form>
+
+    {% if weightOutput %}
+    <p>{{ weightOutput }}</p>
+    {% endif %} {% if lengthOutput %}
+    <p>{{ lengthOutput }}</p>
+    {% endif %}
+  </body>
+</html>

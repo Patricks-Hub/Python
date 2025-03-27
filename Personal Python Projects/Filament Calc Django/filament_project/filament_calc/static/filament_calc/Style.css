@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a8f706d7-b325-4c47-8e50-0a3bad8cae6f/d27qvhv-28729913-7f61-4725-8b81-706d970045df.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hOGY3MDZkNy1iMzI1LTRjNDctOGU1MC0wYTNiYWQ4Y2FlNmYvZDI3cXZodi0yODcyOTkxMy03ZjYxLTQ3MjUtOGI4MS03MDZkOTcwMDQ1ZGYuanBnIn1dXX0.TCUMiPPVTIQA0KzdBQwwIysWYxwJoLXYeaQElBpXKxI");
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Keep background fixed while scrolling */
+  color: white; /* Set default text color to white for readability */
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  color: black; /* Set text color inside the form to black */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+p {
+  background-color: rgba(224, 247, 250, 0.8); /* Semi-transparent light blue */
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}

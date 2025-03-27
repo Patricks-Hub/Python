@@ -1,0 +1,46 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+*.sqlite3
+*.db
+
+# Django-specific ignores
+*.log
+*.pot
+local_settings.py
+db.sqlite3 
+
+# Virtual environment ignores
+venv/
+.venv/
+env/
+.env/
+*/env/
+*/.env/
+.vscode/
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+
+# IDE-specific ignores
+*.swp
+*.swo
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# Static files (if you are collecting them into a separate directory)
+static/ #If you have a static directory in your project root.
+
+# Media files (if you don't want them in version control)
+media/
+
+# Other
+*.bak
+*.orig
+*.py[cod]
+*.egg-info/
+dist/
+build/
