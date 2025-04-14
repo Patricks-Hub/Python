@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ recipe.title }}</title>
+  </head>
+  <body>
+    <h1>{{ recipe.title }}</h1>
+    <p>
+      <strong>Ingredients:</strong><br />{{ recipe.ingredients|linebreaksbr }}
+    </p>
+    <p>
+      <strong>Instructions:</strong><br />{{ recipe.instructions|linebreaksbr }}
+    </p>
+    <a href="{% url 'recipe_list' %}">Back to Recipes</a>
+  </body>
+</html>
